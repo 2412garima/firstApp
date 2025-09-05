@@ -7,6 +7,6 @@ public class Laptop implements Computer{
 
     public void compile()
     {
-        System.out.println("Few errors found");
+        System.out.println("Few errors found using laptop");
     }
 }
