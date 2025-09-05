@@ -9,16 +9,16 @@ public class Developer {
 //    @Autowired  // tells Spring to give object of Laptop, it is Field injection
     private Laptop lap;
 
-    //Constructor Injection, @Autowired comes by default
-    public Developer(Laptop lap) {
-        this.lap = lap;
-    }
-//
-//    //Setter injection, need to add @Autowired
-//    @Autowired
-//    public void setLap(Laptop lap) {
+//    //Constructor Injection, @Autowired comes by default
+//    public Developer(Laptop lap) {
 //        this.lap = lap;
 //    }
+//
+    //Setter injection, need to add @Autowired
+    @Autowired
+    public void setLap(Laptop lap) {
+        this.lap = lap;
+    }
 
 
     public void build()
